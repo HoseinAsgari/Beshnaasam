@@ -59,7 +59,7 @@ $(document).ready(function () {
         adjustGalleryLayout(popupInstance.content.attr('id'));       
     });
 
-    $('.tm-btn-contact').on("click", function(e) {
+    $('.tm-btn-intrests').on("click", function(e) {
         popupInstance.goTo(4); 
     })
 

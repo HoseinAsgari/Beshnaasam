@@ -2,9 +2,37 @@ html {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: Vazir;
+    src        : url(../assets/fonts/Vazir-Regular.ttf);
+}
+
+@font-face {
+    font-family: BoldVazir;
+    src        : url(../assets/fonts/Vazir-Bold.ttf);
+}
+
+* {
+    font-family: Vazir;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: BoldVazir;
+    line-height: normal !important;
+}
+
+p {
+    line-height: normal !important;
+}
+
 body {
     font-family      : 'Source Sans Pro', sans-serif;
-    font-size        : 19px;
+    font-size        : 18px;
     line-height      : 1.8em;
     overflow-x       : hidden;
     background-color : rgb(13, 4, 56);
@@ -633,7 +661,7 @@ figure.effect-chico:hover p {
     width     : 100%;
 }
 
-.tm-contact-row {
+.tm-intrests-row {
     max-width: 1045px;
 }
 
@@ -643,17 +671,17 @@ figure.effect-chico:hover p {
     max-width   : 500px;
 }
 
-/* Contact */
-#contact {
+/* intrests */
+#intrests {
     padding-bottom: 65px;
 }
 
-.tm-contact-col-r {
+.tm-intrests-col-r {
     padding-left : 0;
     padding-right: 30px;
 }
 
-.tm-contact-form {
+.tm-intrests-form {
     max-width   : 350px;
     margin-left : 40px;
     margin-right: 40px;
@@ -684,12 +712,12 @@ select:not([multiple]) {
     color              : #666;
 }
 
-.tm-contact-links li {
+.tm-intrests-links li {
     list-style   : none;
     margin-bottom: 10px;
 }
 
-.tm-contact-link-icon {
+.tm-intrests-link-icon {
     margin-right: 15px;
 }
 
@@ -698,18 +726,18 @@ address {
 }
 
 @media (max-width: 850px) {
-    .tm-contact-row {
+    .tm-intrests-row {
         flex-direction: column;
     }
 
-    .tm-contact-col {
+    .tm-intrests-col {
         flex         : 0 0 100%;
         max-width    : 100%;
         padding-left : 30px;
         padding-right: 30px;
     }
 
-    .tm-contact-form {
+    .tm-intrests-form {
         max-width    : 100%;
         margin-left  : 0;
         margin-right : 0;
