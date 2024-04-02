@@ -36,7 +36,7 @@ body {
     line-height      : 1.8em;
     overflow-x       : hidden;
     background-color : rgb(13, 4, 56);
-    background-image : url('../img/digital\ coin.png');
+    background-image : url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size  : cover;
 }
@@ -49,26 +49,27 @@ header ul {
     list-style: none;
 }
 
-header ul li {
+header nav {
     display    : inline;
-    margin-left: 20px;
+    margin-left: 2px;
     font-weight: bolder;
 }
 
-header ul li a {
+header nav a {
     color           : #fff;
-    margin          : 40px auto;
+    margin          : 4px auto;
     background-color: rgba(28, 28, 28, 0.223);
     border          : 1px solid rgba(255, 255, 255, 0.1);
-    width           : 100%;
     border-radius   : 15px;
     padding         : 17px;
     backdrop-filter : blur(10px);
+    display: block;
+    width: fit-content;
 }
 
-header ul li a:hover {
+header nav a:hover {
     border: #846787 solid 1px;
-    color: #d0b7d3;
+    color : #d0b7d3;
 }
 
 .user-img {
@@ -93,6 +94,35 @@ header ul li a:hover {
     margin       : 7px 13px;
     display      : inline-block;
     color        : #fff;
+    text-align: start;
+    padding-right: 20px;
+}
+
+main h4{
+    line-height: 81px !important;
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        margin-top: 5px;
+    }
+    #bio {
+        margin: 20px 0;
+    }
+    main .mt-5{
+        margin-top: 2px !important;
+    }
+  .media-content{
+    padding-right: 5px;
+  }
+
+  header nav a{
+      font-size: small;
+  }
+
+  main h4{
+    line-height: 50px !important;
+    }
 }
 
 .mc-tel {
@@ -845,6 +875,10 @@ address {
     .tm-gallery-links li {
         margin-right: 20px;
     }
+}
+
+#div-medias {
+    text-align: center;
 }
 
 @media (max-width: 850px) {
